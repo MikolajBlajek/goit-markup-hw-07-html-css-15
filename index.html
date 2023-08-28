@@ -7,8 +7,6 @@
     <title>Homework-07-html+CSS 15</title> 
     <link rel="stylesheet" type="text/css" href="/css/modern-normalize.css"> 
     <link rel="stylesheet" type="text/css" href="/css/style.css">   
-    <link rel="stylesheet" type="text/css" href="/css/tablet-styles.css"> 
-    <link rel="stylesheet" type="text/css" href="/css/desktop-style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;900&display=swap" rel="stylesheet">
@@ -20,7 +18,7 @@
 
             <menu class="header-navigation">
                 <li>
-                    <a class="header-navigation studio" href="index.html" lang="pl">Studio</a>
+                    <a class="header-navigation studio_nav" href="index.html" lang="pl">Studio</a>
                  </li>
                  <li>
                     <a class="header-navigation portfolio" href="portfolio.html" lang="pl">Portfolio</a>
@@ -348,25 +346,25 @@
             <button class="close-form-order-service" data-modal-close>X</button> 
             <h2 class="title-form">Leave your contacts and we will call you back</h2> 
 
-            <label class="name-form" for="username-form">Name</label> 
-            <div class="username-box"> 
-                <svg class="username-icon icon-form"> 
+            <label class="name-form" for="modal-label">Name</label> 
+            <div class="input-wrapper"> 
+                <svg class="modal-icon"> 
                     <use href="/images/form-icon-svg-defs.svg#icon-user-form"></use>
                 </svg>
                 <input class="name input-form" type="name" id="username-form"/>
             </div> 
 
-            <label class="phone-form" for="phone-form">Phone </label>  
-            <div class="phone-box">
-                <svg class="phone-icon icon-form">
+            <label class="modal-label" for="phone-form">Phone </label>  
+            <div class="input-wrapper">
+                <svg class="modal-icon">
                     <use href="/images/form-icon-svg-defs.svg#icon-phone-form"></use>
                 </svg>
                 <input class="phone input-form" type="phone" id="phone-form"/> 
             </div>
 
-            <label class="mail-form">Email</label>   
-            <div class="mail-box">
-                <svg class="mail-icon icon-form">
+            <label class="modal-label">Email</label>   
+            <div class="input-wrapper">
+                <svg class="modal-icon">
                     <use href="/images/form-icon-svg-defs.svg#icon-mail-form"></use>
                 </svg>
                 <input class="mail input-form" type="mail" id="mail-form"/>
