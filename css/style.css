@@ -10,7 +10,8 @@
     --NavyBlueModal-Modaloverlay: rgba(46,47,66,0.4);  
     --Grey-Herobackground:rgba(46, 47, 66, 0.7); 
     --White-Whitebackground:#ffffff;
-    --Dairy-Modalbackround:#fcfcfc; 
+    --Dairy-Modalbackround:#fcfcfc;  
+    --cubic-bezier: cubic-bezier(0.4, 0, 0.2, 1)
     
 }
     
@@ -1226,7 +1227,6 @@ li {
       
 
 
-
     /*----------------------*/   
 
     .modal-label{ 
@@ -1270,15 +1270,44 @@ li {
     .area-text-form:focus{ 
         border-color: var(--Iris-PrimaryBrand);
     }
+  
+    .policy-text-form{ 
+        color: var(--LIGHT-SLATE, #8E8F99);
+        font-size: 13px;
+        line-height: 14px;
+        letter-spacing: 0.48px;
+    }
 
     .box-policy{  
         display: block;
-        margin-top: 16px;
+        margin-top: 16px; 
+        text-align: center;
+    }
+     
+    .check-box-form{ 
+        appearance: none; 
+        position: absolute;
+    }  
+
+    .checkbox-icon {
+        display: inline-block; 
+        border: 1px solid var(--NavyBlueModal-Modaloverlay);
+        border-radius: 2px;
+        vertical-align: sub;
+        transition-property: background-color, border-color;
+        transition-duration: 250ms;
+        transition-timing-function: var(--cubic-bezier);
+        fill: #fff; 
+        margin-right: 8px; 
+        width: 18px; 
+        height: 18px;
     }
 
-    .check-box-form >svg{ 
-        display: none;
+    input.check-box-form:checked+.checkbox-icon {
+        fill: var(--White-Whitebackground); 
+        background-color: var(--Iris-PrimaryBrand);
     }
+
   
     .send-form-order-service{  
         display: inline-flex;
