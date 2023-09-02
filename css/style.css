@@ -1400,7 +1400,7 @@ li {
     }
 
     @media screen and (min-width: 1200px) {
-        .first {
+        .first-container {
             background-image: url(../images/images-page-1/big-photo-header-page1/header-1600@3x.jpg);
         }
     }
