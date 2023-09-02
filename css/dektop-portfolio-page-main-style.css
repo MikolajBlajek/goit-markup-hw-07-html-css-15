@@ -56,7 +56,8 @@ li {
         border: 1px solid var(--cornflower, #E7E9FC);
         background: var(--cloud, #F4F4FD);
         color: var(--Iris-PrimaryBrand); 
-        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        transition: 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+        cursor: pointer;
     } 
 
     .portfolio-bth:hover{ 
@@ -81,7 +82,8 @@ li {
      
     .list-works> li{ 
         width: 360px;
-        height: 420px;
+        height: 420px; 
+        cursor: pointer;
     } 
 
     .box-overlay{
